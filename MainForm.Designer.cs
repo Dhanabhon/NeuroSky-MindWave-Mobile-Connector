@@ -33,13 +33,16 @@
             this.lblBandPower = new System.Windows.Forms.Label();
             this.lblMeditationLevel = new System.Windows.Forms.Label();
             this.lblAttentionLevelValue = new System.Windows.Forms.Label();
-            this.lblAlphaValue = new System.Windows.Forms.Label();
+            this.lblAlphaLowValue = new System.Windows.Forms.Label();
             this.lblDeltaValue = new System.Windows.Forms.Label();
             this.lblThetaValue = new System.Windows.Forms.Label();
-            this.lblBetaValue = new System.Windows.Forms.Label();
-            this.lblGammaValue = new System.Windows.Forms.Label();
+            this.lblBetaLowValue = new System.Windows.Forms.Label();
+            this.lblGammaLowValue = new System.Windows.Forms.Label();
             this.lblMeditationLevelValue = new System.Windows.Forms.Label();
             this.pbHeasetStatus = new System.Windows.Forms.PictureBox();
+            this.lblAlphaHighValue = new System.Windows.Forms.Label();
+            this.lblBetaHighValue = new System.Windows.Forms.Label();
+            this.lblGammaHighValue = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbHeasetStatus)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,7 +80,7 @@
             // 
             this.lblMeditationLevel.AutoSize = true;
             this.lblMeditationLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lblMeditationLevel.Location = new System.Drawing.Point(9, 304);
+            this.lblMeditationLevel.Location = new System.Drawing.Point(12, 307);
             this.lblMeditationLevel.Name = "lblMeditationLevel";
             this.lblMeditationLevel.Size = new System.Drawing.Size(122, 16);
             this.lblMeditationLevel.TabIndex = 3;
@@ -92,19 +95,19 @@
             this.lblAttentionLevelValue.TabIndex = 4;
             this.lblAttentionLevelValue.Text = "Attention:";
             // 
-            // lblAlphaValue
+            // lblAlphaLowValue
             // 
-            this.lblAlphaValue.AutoSize = true;
-            this.lblAlphaValue.Location = new System.Drawing.Point(12, 174);
-            this.lblAlphaValue.Name = "lblAlphaValue";
-            this.lblAlphaValue.Size = new System.Drawing.Size(37, 13);
-            this.lblAlphaValue.TabIndex = 5;
-            this.lblAlphaValue.Text = "Alpha:";
+            this.lblAlphaLowValue.AutoSize = true;
+            this.lblAlphaLowValue.Location = new System.Drawing.Point(12, 175);
+            this.lblAlphaLowValue.Name = "lblAlphaLowValue";
+            this.lblAlphaLowValue.Size = new System.Drawing.Size(60, 13);
+            this.lblAlphaLowValue.TabIndex = 5;
+            this.lblAlphaLowValue.Text = "Alpha Low:";
             // 
             // lblDeltaValue
             // 
             this.lblDeltaValue.AutoSize = true;
-            this.lblDeltaValue.Location = new System.Drawing.Point(9, 203);
+            this.lblDeltaValue.Location = new System.Drawing.Point(12, 201);
             this.lblDeltaValue.Name = "lblDeltaValue";
             this.lblDeltaValue.Size = new System.Drawing.Size(35, 13);
             this.lblDeltaValue.TabIndex = 6;
@@ -113,34 +116,34 @@
             // lblThetaValue
             // 
             this.lblThetaValue.AutoSize = true;
-            this.lblThetaValue.Location = new System.Drawing.Point(9, 228);
+            this.lblThetaValue.Location = new System.Drawing.Point(12, 228);
             this.lblThetaValue.Name = "lblThetaValue";
             this.lblThetaValue.Size = new System.Drawing.Size(38, 13);
             this.lblThetaValue.TabIndex = 7;
             this.lblThetaValue.Text = "Theta:";
             // 
-            // lblBetaValue
+            // lblBetaLowValue
             // 
-            this.lblBetaValue.AutoSize = true;
-            this.lblBetaValue.Location = new System.Drawing.Point(9, 254);
-            this.lblBetaValue.Name = "lblBetaValue";
-            this.lblBetaValue.Size = new System.Drawing.Size(32, 13);
-            this.lblBetaValue.TabIndex = 8;
-            this.lblBetaValue.Text = "Beta:";
+            this.lblBetaLowValue.AutoSize = true;
+            this.lblBetaLowValue.Location = new System.Drawing.Point(12, 254);
+            this.lblBetaLowValue.Name = "lblBetaLowValue";
+            this.lblBetaLowValue.Size = new System.Drawing.Size(55, 13);
+            this.lblBetaLowValue.TabIndex = 8;
+            this.lblBetaLowValue.Text = "Beta Low:";
             // 
-            // lblGammaValue
+            // lblGammaLowValue
             // 
-            this.lblGammaValue.AutoSize = true;
-            this.lblGammaValue.Location = new System.Drawing.Point(9, 279);
-            this.lblGammaValue.Name = "lblGammaValue";
-            this.lblGammaValue.Size = new System.Drawing.Size(46, 13);
-            this.lblGammaValue.TabIndex = 9;
-            this.lblGammaValue.Text = "Gamma:";
+            this.lblGammaLowValue.AutoSize = true;
+            this.lblGammaLowValue.Location = new System.Drawing.Point(12, 281);
+            this.lblGammaLowValue.Name = "lblGammaLowValue";
+            this.lblGammaLowValue.Size = new System.Drawing.Size(69, 13);
+            this.lblGammaLowValue.TabIndex = 9;
+            this.lblGammaLowValue.Text = "Gamma Low:";
             // 
             // lblMeditationLevelValue
             // 
             this.lblMeditationLevelValue.AutoSize = true;
-            this.lblMeditationLevelValue.Location = new System.Drawing.Point(9, 332);
+            this.lblMeditationLevelValue.Location = new System.Drawing.Point(12, 334);
             this.lblMeditationLevelValue.Name = "lblMeditationLevelValue";
             this.lblMeditationLevelValue.Size = new System.Drawing.Size(59, 13);
             this.lblMeditationLevelValue.TabIndex = 10;
@@ -152,22 +155,52 @@
             this.pbHeasetStatus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbHeasetStatus.Location = new System.Drawing.Point(206, 12);
             this.pbHeasetStatus.Name = "pbHeasetStatus";
-            this.pbHeasetStatus.Size = new System.Drawing.Size(70, 70);
+            this.pbHeasetStatus.Size = new System.Drawing.Size(80, 70);
             this.pbHeasetStatus.TabIndex = 11;
             this.pbHeasetStatus.TabStop = false;
+            // 
+            // lblAlphaHighValue
+            // 
+            this.lblAlphaHighValue.AutoSize = true;
+            this.lblAlphaHighValue.Location = new System.Drawing.Point(150, 175);
+            this.lblAlphaHighValue.Name = "lblAlphaHighValue";
+            this.lblAlphaHighValue.Size = new System.Drawing.Size(62, 13);
+            this.lblAlphaHighValue.TabIndex = 12;
+            this.lblAlphaHighValue.Text = "Alpha High:";
+            // 
+            // lblBetaHighValue
+            // 
+            this.lblBetaHighValue.AutoSize = true;
+            this.lblBetaHighValue.Location = new System.Drawing.Point(150, 254);
+            this.lblBetaHighValue.Name = "lblBetaHighValue";
+            this.lblBetaHighValue.Size = new System.Drawing.Size(57, 13);
+            this.lblBetaHighValue.TabIndex = 13;
+            this.lblBetaHighValue.Text = "Beta High:";
+            // 
+            // lblGammaHighValue
+            // 
+            this.lblGammaHighValue.AutoSize = true;
+            this.lblGammaHighValue.Location = new System.Drawing.Point(150, 281);
+            this.lblGammaHighValue.Name = "lblGammaHighValue";
+            this.lblGammaHighValue.Size = new System.Drawing.Size(71, 13);
+            this.lblGammaHighValue.TabIndex = 14;
+            this.lblGammaHighValue.Text = "Gamma High:";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(360, 362);
+            this.Controls.Add(this.lblGammaHighValue);
+            this.Controls.Add(this.lblBetaHighValue);
+            this.Controls.Add(this.lblAlphaHighValue);
             this.Controls.Add(this.pbHeasetStatus);
             this.Controls.Add(this.lblMeditationLevelValue);
-            this.Controls.Add(this.lblGammaValue);
-            this.Controls.Add(this.lblBetaValue);
+            this.Controls.Add(this.lblGammaLowValue);
+            this.Controls.Add(this.lblBetaLowValue);
             this.Controls.Add(this.lblThetaValue);
             this.Controls.Add(this.lblDeltaValue);
-            this.Controls.Add(this.lblAlphaValue);
+            this.Controls.Add(this.lblAlphaLowValue);
             this.Controls.Add(this.lblAttentionLevelValue);
             this.Controls.Add(this.lblMeditationLevel);
             this.Controls.Add(this.lblBandPower);
@@ -191,13 +224,16 @@
         private System.Windows.Forms.Label lblBandPower;
         private System.Windows.Forms.Label lblMeditationLevel;
         private System.Windows.Forms.Label lblAttentionLevelValue;
-        private System.Windows.Forms.Label lblAlphaValue;
+        private System.Windows.Forms.Label lblAlphaLowValue;
         private System.Windows.Forms.Label lblDeltaValue;
         private System.Windows.Forms.Label lblThetaValue;
-        private System.Windows.Forms.Label lblBetaValue;
-        private System.Windows.Forms.Label lblGammaValue;
+        private System.Windows.Forms.Label lblBetaLowValue;
+        private System.Windows.Forms.Label lblGammaLowValue;
         private System.Windows.Forms.Label lblMeditationLevelValue;
         private System.Windows.Forms.PictureBox pbHeasetStatus;
+        private System.Windows.Forms.Label lblAlphaHighValue;
+        private System.Windows.Forms.Label lblBetaHighValue;
+        private System.Windows.Forms.Label lblGammaHighValue;
     }
 }
 

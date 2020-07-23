@@ -3,4 +3,4 @@ NeuroSky MindWave Mobile Connector is a software to connect and receive data fro
 
 Supported NeuroSky Mindwave Hardware
 - MindWave Mobile
-- MidnWave Mobile 1.5
+- MindWave Mobile 1.5
